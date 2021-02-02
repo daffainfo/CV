@@ -10,19 +10,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        .edu {
-            width: 200px;
+    	body {
+    		background: url(images/Background.jpg) fixed no-repeat center top;
+    	}
+    	header {
+    		height: 775px;
+    	}
+    	main, footer {
+    		color: white;
+    	}
+    	.nickname {
+			color: #17D1AC
+    	}
+    	.background-p {
+			height: 100%
+    	}
+    	.photo {
+        	height: 50%;
+        	width: 50%;
         }
-        .org {
-            width: 175px;
+        .edu, .comitee, .work {
+            width: 275px;
         }
-        .work {
-            width: 400px;
+        .cert {
+            width: 350px;
         }
     </style>
 </head>
-<body style="background-color: #2b2b2b;">
-    <header style="height: 750px; background: url(./images/Background.jpg) no-repeat center top;">
+<body>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,21 +56,21 @@
               </div>
           </div>
       </nav>
-      <div class="p-5 text-center bg-image" style="height: 100%">
+      <div class="p-5 text-center bg-image background-p">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white align-middle">
-                <h1 class="mb-2 display-4">MUHAMMAD <span style="color: #17D1AC">DAFFA</span></h1>
+                <h1 class="mb-2 display-4">MUHAMMAD <span class="nickname">DAFFA</span></h1>
                 <h4 class="mb-5">Web Application Penetration Tester</h4>
                 <a class="btn btn-outline-light btn-lg btn-about" href="#about" role="button">About Me</a>
             </div>
         </div>
     </div>
 </header>
-<main class="container" style="color: white">
+<main class="container">
     <section id="about">
         <h1 class="mb-5 mt-5 text-center">About Me</h1>
         <div class="row">
-          <img src="./images/Foto Profil.jpg" class="img-fluid rounded mx-auto d-block" style="height: 50%; width: 50%">
+          <img src="./images/Foto Profil.jpg" class="img-fluid rounded mx-auto d-block photo">
 
           <p class="text-justify p-4">Hello, my name is Muhammad Daffa. I lived in Sidoarjo, East Java. I am an undergraduate student from the Institute of Technology Sepuluh Nopember majoring in informatics engineering. I am interested in cybersecurity, especially in the field of penetration testing. And now trying to develop themselves in the future by learning programming languages, namely JavaScript and Laravel. I enjoy meeting new people, having new experiences, and being able to work both individually and in groups.</p>
       </div>
@@ -62,12 +78,12 @@
   <section id="education">
     <h1 class="mb-5 mt-5 text-center">Education</h1>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-6">
             <img src="./images/SMANISDA.png" class="img-fluid rounded mx-auto d-block edu">
             <h5 class="text-center">SMA Negeri 1 Sidoarjo</h5>
             <p class="text-center">Science Major</p>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
             <img src="./images/ITS.png" class="img-fluid rounded mx-auto d-block edu">
             <h5 class="text-center">Institut Teknologi Sepuluh Nopember</h5>
             <p class="text-center">Informatics Engineering</p>
@@ -76,20 +92,20 @@
 </section>
 <section id="organization">
     <h1 class="mb-5 mt-5 text-center">Organization Experience</h1>
-    <img src="./images/UKM Bridge.jpg" class="img-fluid rounded mx-auto d-block">
+    <img src="./images/UKM Bridge.jpg" class="img-fluid rounded mx-auto d-block photo">
     <h5 class="text-center mt-1">UKM Bridge ITS</h5>
     <p class="text-center">Active member</p>
 </section>
 <section id="comitee">
     <h1 class="mb-5 mt-5 text-center">Comitee Experience</h1>
-    <img src="./images/Salam Surabaya.jpg" class="img-fluid rounded mx-auto d-block">
+    <img src="./images/Salam Surabaya.jpg" class="img-fluid rounded mx-auto d-block comitee">
     <h5 class="text-center mt-1">Salam Surabaya 2020</h5>
     <p class="text-center">Publikasi & Dokumentasi SALAM 2020</p>
 </section>
 <section id="work">
     <h1 class="mb-5 mt-5 text-center">Work Experience</h1>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-6">
             <img src="./images/Unit Ventures.png" class="img-fluid rounded mx-auto d-block work">
             <h5 class="text-center mt-1">
                 <a href="https://unit.ventures">Unit Ventures</a>
@@ -97,7 +113,7 @@
             <p class="text-center">Freelance as web application penetration tester</p>
             <p class="text-center">August 2020 - November 2020</p>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
             <img src="./images/DPTSI.jpg" class="img-fluid rounded mx-auto d-block work">
             <h5 class="text-center mt-1">
                 <a href="https://its.ac.id">Direktorat Pengembangan Teknolgi dan Sistem Informasi</a>
@@ -121,15 +137,12 @@
 <section>
     <h1 class="mb-5 mt-5 text-center">Skills</h1>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-6">
             <h4 class="text-center">Hard Skills</h4>
             <ul class="list-group">
                 <li class="list-group-item list-group-item-dark">Web Application Penetration Testing</li>
                 <li class="list-group-item list-group-item-dark">Vulnerability Assesment</li>
-                <li class="list-group-item list-group-item-dark">Penetration Testing</li>
-            </ul>
-            <h5 class="mt-2 text-center">Programming Skills</h5>
-            <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">Web Development</li>
                 <li class="list-group-item list-group-item-dark">HTML</li>
                 <li class="list-group-item list-group-item-dark">CSS</li>
                 <li class="list-group-item list-group-item-dark">PHP</li>
@@ -138,7 +151,7 @@
                 <li class="list-group-item list-group-item-dark">WordPress CMS</li>
             </ul>
         </div>
-        <div class="col">
+        <div class="col-sm-6">
             <h4 class="text-center">Soft Skills</h4>
             <ul class="list-group">
                 <li class="list-group-item list-group-item-dark">Teamwork</li>
@@ -151,81 +164,81 @@
 </section>
 <section id="certification">
     <h1 class="mb-5 mt-5 text-center">Certification & Courses</h1>
-    <h2 class="text-center">Certification</h2>
+    <h2 class="text-center mb-5">Certification</h2>
     <div class="row">
-        <div class="col">
-            <img src="./images/Certifications/CSCU.jpg" class="img-fluid rounded mx-auto d-block work" alt="29-31 January">
-            <h5 class="text-center mt-1">Certified Secure Computer User V2(CSCU)</h5>
-            <h6 class="text-center"><a href="https://eccouncil.org">EC - Council</a></h6>
-            <h6 class="text-center">No Expire</h6>
-        </div>
-        <div class="col">
-            <img src="./images/Certifications/CSPFC.jpg" class="img-fluid rounded mx-auto d-block work">
+        <div class="col-sm-6">
+            <img src="./images/Certifications/CSPFC.jpg" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">Cyber Security Foundation Professional Certificate(CSFPC)</h5>
             <h6 class="text-center"><a href="https://certiprof.com">CertiProf</a></h6>
             <h6 class="text-center">Expire in 2022</h6>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <img src="./images/Certifications/SFPC.jpg" class="img-fluid rounded mx-auto d-block work">
+        <div class="col-sm-6">
+            <img src="./images/Certifications/SFPC.jpg" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">Scrum Foundation Professional Certificate (SFPC)</h5>
             <h6 class="text-center"><a href="https://certiprof.com">CertiProf</a></h6>
             <h6 class="text-center">No expire</h6>
         </div>
-        <div class="col">
-            <img src="./images/Certifications/NSE1.jpg" class="img-fluid rounded mx-auto d-block work">
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="./images/Certifications/NSE1.jpg" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">NSE 1 Network Security Associate</h5>
             <h6 class="text-center"><a href="https://fortinet.com">FortiNet</a></h6>
             <h6 class="text-center">Expire in 2022</h6>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <img src="./images/Certifications/NSE2.jpg" class="img-fluid rounded mx-auto d-block work">
+        <div class="col-sm-6">
+            <img src="./images/Certifications/NSE2.jpg" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">NSE 2 Network Security Associate</h5>
             <h6 class="text-center"><a href="https://fortinet.com">FortiNet</a></h6>
             <h6 class="text-center">Expire in 2022</h6>
         </div>
     </div>
-    <h2 class="text-center">Course</h2>
     <div class="row">
         <div class="col">
-            <img src="./images/Course/CNSS.jpg" class="img-fluid rounded mx-auto d-block work">
+            <img src="./images/Certifications/CSCU.jpg" class="img-fluid rounded mx-auto d-block cert">
+            <h5 class="text-center mt-1">Certified Secure Computer User V2(CSCU)</h5>
+            <h6 class="text-center"><a href="https://eccouncil.org">EC - Council</a></h6>
+            <h6 class="text-center">No Expire</h6>
+        </div>
+    </div>
+    <h2 class="text-center mt-5 mb-5">Course</h2>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="./images/Course/CNSS.jpg" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">Certified Network Security Specialist (CNSS)</h5>
             <h6 class="text-center"><a href="https://icsi.co.uk">ICSI</a></h6>
             <h6 class="text-center">No expire</h6>
         </div>
-        <div class="col">
-            <img src="./images/Course/SOC.jpg" class="img-fluid rounded mx-auto d-block work">
+        <div class="col-sm-6">
+            <img src="./images/Course/SOC.jpg" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">Security Operation Centre (SOC) Essentials</h5>
             <h6 class="text-center"><a href="https://socexperts.com/">SOC Experts</a></h6>
             <h6 class="text-center">No expire</h6>
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <img src="./images/Course/Introduction to Cybersecurity.jpg" class="img-fluid rounded mx-auto d-block work">
+        <div class="col-sm-6">
+            <img src="./images/Course/Introduction to Cybersecurity.jpg" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">Introduction to Cybersecurity</h5>
             <h6 class="text-center"><a href="https://cisco.com">CISCO Networking Academy</a></h6>
             <h6 class="text-center">No expire</h6>
         </div>
-        <div class="col">
-            <img src="./images/Course/PHP.png" class="img-fluid rounded mx-auto d-block work">
+        <div class="col-sm-6">
+            <img src="./images/Course/PHP.png" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">PHP Course</h5>
             <h6 class="text-center"><a href="https://progate.com">Progate</a></h6>
             <h6 class="text-center">No expire</h6>
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <img src="./images/Course/SQL.png" class="img-fluid rounded mx-auto d-block work">
+        <div class="col-sm-6">
+            <img src="./images/Course/SQL.png" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">SQL Course</h5>
             <h6 class="text-center"><a href="https://progate.com">Progate</a></h6>
             <h6 class="text-center">No expire</h6>
         </div>
-        <div class="col">
-            <img src="./images/Course/JavaScript.png" class="img-fluid rounded mx-auto d-block work">
+        <div class="col-sm-6">
+            <img src="./images/Course/JavaScript.png" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">JavaScript Course</h5>
             <h6 class="text-center"><a href="https://progate.com">Progate</a></h6>
             <h6 class="text-center">No expire</h6>
@@ -233,7 +246,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <img src="./images/Course/Git.png" class="img-fluid rounded mx-auto d-block work">
+            <img src="./images/Course/Git.png" class="img-fluid rounded mx-auto d-block cert">
             <h5 class="text-center mt-1">Git Course</h5>
             <h6 class="text-center"><a href="https://progate.com">Progate</a></h6>
             <h6 class="text-center">No expire</h6>
@@ -241,14 +254,14 @@
     </div>
 </section>
 </main>
-<footer style="color: white" id="contact">
+<footer id="contact">
     <h1 class="mb-1 mt-5 text-center">Contact</h1>
     <div class="text-center ml-2 mt-2 mb-5">    
-        <a href="mailto:md15ev@gmail.com" class="fa fa-envelope fa-3x ml-5 mt-5"></a>
-        <a href="https://github.com/daffainfo/" class="fa fa-github fa-3x ml-5 mt-5"></a>
-        <a href="#" class="fa fa-facebook fa-3x ml-5 mt-5"></a>
-        <a href="https://twitter.com/daffainfo" class="fa fa-twitter fa-3x ml-5 mt-5"></a>
-        <a href="https://www.linkedin.com/in/muhammaddaffa" class="fa fa-linkedin fa-3x ml-5 mt-5"></a>
+        <a href="mailto:md15ev@gmail.com" target="_blank" class="fa fa-envelope fa-3x mt-5"></a>
+        <a href="https://github.com/daffainfo/" target="_blank" class="fa fa-github fa-3x ml-4 mt-5"></a>
+        <a href="#" class="fa fa-medium fa-3x ml-4 mt-5"></a>
+        <a href="https://twitter.com/daffainfo" target="_blank" class="fa fa-twitter fa-3x ml-4 mt-5"></a>
+        <a href="https://www.linkedin.com/in/muhammaddaffa" target="_blank" class="fa fa-linkedin fa-3x ml-4 mt-5"></a>
     </div>
 </footer>
 </body>
